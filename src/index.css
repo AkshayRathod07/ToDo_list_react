@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Andika New Basic', sans-serif;
+
+}
+.main_div{
+    width: 100%;
+    height: 100vh;
+    
+    background-image: url(./night.jpg) ;
+    background-color: #cccccc;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center_div{
+    width:22%;
+    height:65vh;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px rgb(0,0,0, 0.5);
+    border-radius: 15px;
+
+}
+
+h1 {
+   color: rgba(0, 0, 0, 0.575);
+   font-size: 50px;
+   margin-bottom: 30px;
+   min-width: 64px;
+   box-sizing: border-box;
+   font-family: "comfortaa", cursive;
+   font-weight: 500;
+   border-radius: 4px;
+   letter-spacing:0.02857em;
+   text-transform: uppercase;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.322);
+}
+
+.newBtn {
+    width: 30px;
+    height: 55px;
+    
+    background-color: #4cd3d3 !important;
+    color: white !important;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 100% !important;
+}
+.newBtn:hover {
+    color: #16a085 !important;
+    background: white !important;
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #8566aa;
+    outline: none;
+}
+
+button {
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border-color:transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0, 0.3);
+}
+
+button:hover{
+    background-color: #20bf6b;
+}
+
+ol {
+    margin-top: 30px;
+}
+
+ol li {
+    padding-left: 0 px;
+    text-align: left;
+    font-size: 20px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color:#8566aa;
+    text-transform: capitalize;
+}
+
+.todo_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.todo_style .deletIcon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8566aa;
+    border-radius: 80%;
+    margin: 0 15px 0 35px;
+    color:aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+
+}
+
+.todo_style .deletIcon:hover{
+    background-color: crimson;
+}
+.todo_style .deletIcon:hover .list_style {
+    color: crimson;
+}
+
+
+@media(max-width: 768px) {
+    .center_div{
+        width: 55%;
+    }
+    .todo_style .deletIcon{
+        margin:  0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    button {
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+
+    }
+
 }
